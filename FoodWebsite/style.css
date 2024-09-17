@@ -92,4 +92,51 @@ nav ul li {
     background: #fff;
 }
 
+/* --------------SCROLLBAR (EXPERIMENTAL)---------------- */
 
+
+/* ::-webkit-scrollbar the scrollbar.
+::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+::-webkit-scrollbar-thumb the draggable scrolling handle.
+::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements. 
+*/ 
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+}
+  
+  
+::-webkit-scrollbar-thumb {
+    background: #222121;
+}
+  
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+/* ------------------RECEITASAAAAAA----------------- */
+
+.recipes {
+    padding: 50px 0;
+
+}
+
+.recipes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.recipe-section {
+    width: 90%;
+
+}
