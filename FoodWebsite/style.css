@@ -42,8 +42,8 @@ nav ul li {
 .heo {
     background: url(Images/heo-image.jpg);
     width: 100%;
-    height: 400px;
-    /* background-repeat: no-repeat; */
+    height: auto;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color:#fff;
@@ -67,7 +67,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: red;
+    /* background: #fff; */
 }
 
 .search-box input {
@@ -75,10 +75,21 @@ nav ul li {
     padding: 12px;
     outline: none;
     border: 0;
-    border-radius: 18px 0 0 18px;
+    border-radius: 20px 0 0 20px;
     font-size: 1rem;
+    border: 0 solid #fff;
 }        
 
-button {
-    
+.search-box button {
+    width: 40%;
+    padding: 12px;
+    outline: none;
+    border: 0;
+    border-radius: 0 20px 20px 0;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    background: #fff;
 }
+
+
