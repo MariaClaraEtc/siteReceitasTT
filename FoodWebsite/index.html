@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GostosoTudo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <title>GostosoTudo</title>
+    
 </head>
 <body>
     <header>
         <div class="container">
             <h1 class="logo">GostosoTudo</h1>
             <nav>
+                <!-- &#9776 is a HTML entity that represents the "hamburger" menu icon (three horizontal lines). It’s often used in web design to indicate a menu that can be expanded or collapsed. -->
+                <div class="menu-icon">&#9776</div>
                 <ul>
                     <li>Home</li>
                     <li>About</li>
@@ -32,36 +36,44 @@
             </form>
         </div>
     </section>
-<!-- ----------------------RECEITAS-------------------- -->
-    <section class="recipe-section">
-        <h2>Receitas populares!</h2>
-        <div class="recipe-card">
-            <img src="Images/dish-1.jpg" alt="receita1">
-            <h2>Receita 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
-            <a href="#">Ver receita</a>
-        </div>
 
-        <div class="recipe-card">
-            <img src="Images/dish-2.jpg" alt="receita2">
-            <h2>Receita 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
-            <a href="#">Ver receita</a>
-        </div>
+    <section class="recipes">
+        <h1>Receitas populares!</h1>
+        <div class="recipe-section">
+            <div class="recipe-card">
+                <img src="Images/dish-1.jpg" alt="receita1">
+                <h2>Receita 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
+                <a href="#">Ver receita</a>
+            </div>
 
-        <div class="recipe-card">
-            <img src="Images/dish-3.jpg" alt="receita3">
-            <h2>Receita 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
-            <a href="#">Ver receita</a>
-        </div>
+            <div class="recipe-card">
+                <img src="Images/dish-2.jpg" alt="receita2">
+                <h2>Receita 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
+                <a href="#">Ver receita</a>
+            </div>
 
-        <div class="recipe-card">
-            <img src="Images/dish-4.jpg" alt="receita4">
-            <h2>Receita 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
-            <a href="#">Ver receita</a>
-        </div>
+            <div class="recipe-card">
+                <img src="Images/dish-3.jpg" alt="receita3">
+                <h2>Receita 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
+                <a href="#">Ver receita</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="Images/dish-4.jpg" alt="receita4">
+                <h2>Receita 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est.</p>
+                <a href="#">Ver receita</a>
+            </div>
+    </div>
     </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 GostosoTudo</p>
+        </div>
+    </footer>
 </body>
 </html>
