@@ -28,6 +28,11 @@ header {
     justify-content: space-between;
 }
 
+/* PQ N FUNCIONAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+.nav-list {
+    display: none;
+}
+
 nav ul li {
     list-style: none;
     display: inline;
@@ -93,16 +98,6 @@ nav ul li {
 }
 
 /* --------------SCROLLBAR (EXPERIMENTAL)---------------- */
-
-
-/* ::-webkit-scrollbar the scrollbar.
-::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
-::-webkit-scrollbar-thumb the draggable scrolling handle.
-::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
-::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
-::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
-::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements. 
-*/ 
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -188,8 +183,33 @@ footer {
     text-align: center;
 }
 
-/* ---------Responsividade------------ */
+/* ---------media query pq selfhate é o melhor self impulse------------ */
+
+.menu-icon {
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
 
 @media only screen and (min-width: 768px) {
-    
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .heo h2 {
+        font-size: 28px;
+    }
+
+    .heo p {
+        font-size: 15px;
+    }
 }
