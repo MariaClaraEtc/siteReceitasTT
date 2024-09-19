@@ -37,7 +37,7 @@ header {
     position: relative;
     font-size: 18px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 800;
     text-decoration: none;
     margin-left: 40px;
 }
@@ -84,41 +84,18 @@ header {
     padding: 140px 0;
 }
 
-.heo p {
+.class-heo h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.class-heo p {
+    padding: 10px;
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: center;
 } 
-
-.search-box {
-    max-width: 550px;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background: #fff; */
-}
-
-.search-box input {
-    width: 70%;
-    padding: 12px;
-    outline: none;
-    border: 0;
-    border-radius: 20px 0 0 20px;
-    font-size: 1rem;
-    border: 0 solid #fff;
-}        
-
-.search-box button {
-    width: 40%;
-    padding: 12px;
-    outline: none;
-    border: 0;
-    border-radius: 0 20px 20px 0;
-    font-size: 1rem;
-    color: black;
-    cursor: pointer;
-    background: #fff;
-}
 
 /* --------------SCROLLBAR (EXPERIMENTAL)---------------- */
 
