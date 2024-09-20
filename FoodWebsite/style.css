@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    height: 60px;
+    height: 80px;
     width: 100%;
     background: #222121;
     color: #fff;
@@ -73,7 +73,7 @@ header {
 }
 
 .heo {
-    background: url(Images/heo-image.jpg);
+    background: url(https://images.unsplash.com/photo-1608835291093-394b0c943a75?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
