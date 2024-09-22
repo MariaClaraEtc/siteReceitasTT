@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+  <link rel="icon" href="Images/favicon.ico">
+  <title>GostosoTudo</title>
+  <Style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background: #f8f8f8;
+    }
+
+    header {
+        height: 80px;
+        width: 100%;
+        background: #222121;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* PQ N FUNCIONAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+    .navbar {
+        display: none;
+    }
+
+    .navbar a {
+        position: relative;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+
+    .navbar a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: .3s;
+    }
+
+    .navbar a:hover::before {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 32px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .heo {
+        background: url(https://images.unsplash.com/photo-1608835291093-394b0c943a75?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color:#fff;
+        text-align: center;
+        padding: 140px 0;
+    }
+
+    .class-heo h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .class-heo p {
+        padding: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+    } 
+
+    footer {
+    background: #222121;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+      
+
+    ::-webkit-scrollbar-track {
+        background: #f8f8f8;
+    }
+      
+      
+    ::-webkit-scrollbar-thumb {
+        background: #222121;
+    }
+      
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .menu-icon {
+            display: none;
+        }
+
+        .navbar {
+            display: block;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .heo h2 {
+            font-size: 28px;
+        }
+        
+    }
+
+
+  </Style>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" >GostosoTudo</a>
+            <nav class="navbar">
+                <!-- &#9776 is a HTML entity that represents the "hamburger" menu icon (three horizontal lines). It’s often used in web design to indicate a menu that can be expanded or collapsed. -->
+                <div class="menu-icon">&#9776</div>
+                <!-- <label class="menu-icon" for="toggle">&#8801;</label> -->
+                
+                <a href="#">Home</a>
+                <a href="#">About</a> <!-- about.html -->
+                <a href="#">Contact</a> <!-- contact.html -->
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="heo">
+        <div class="class-heo">
+            <h2>Seja bem-vindo ao GostosoTudo!</h2>
+            
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est</p>
+        </div>
+    </section>
+
+    <h1>Bolinho de batata com queijo</h1>
+  
+      
+    <img src="">
+    <h2>Ingredientes</h2>
+    
+    <ul>
+      <li>3 batatas médias (170 gramas cada)</li>
+      <li>1/2 xícara de chá de parmesão ralado (40 gramas)</li>
+      <li>1 colher de sopa de azeite</li>
+      <li>Farinha de rosca para empanar (60 gramas)</li>
+      <li>1 colher de chá de sal (ou a gosto)</li>
+      <li>1/2 colher de chá (rasa) de pimenta-do-reino(ou a gosto)</li>
+      <li>2 colheres de sopa de cheiro-verde (ou a gosto)</li>
+    </ul>
+
+  <h2>Modo de preparo</h2>
+    
+    <ol>
+      <li>Reúna todos os ingredientes os ingredientes;</li>
+      <li>Em uma tábua, descasque as batatas com um descascador, corte-a em pedaços grandes, mantendo um mesmo padrão de tamanho. Passe para uma panela grande, cubra com água e deixe cozinhar por cerca de 15 minutos ou até ficar al dente (espete um garfo e, se ele entrar facilmente, está pronto);</li>
+      <li>Descarte a água e reserve as batatas até elas esfriarem (isso evita que elas soltem a água do cozimento);</li>
+      <li>Com as batatas cozidas e frias, despeje-as em uma tigela e amasse-as com um garfo ou amassador até formar um purê;</li>
+      <li>Na mesma tigela, com o purê de batatas, acrescente o parmesão ralado, o azeite, o sal, a pimenta-do-reino e o cheiro-verde. Misture até a massa incorporar todos os temperos;</li>
+      <li>Com uma colher, retire uma porção da massa e faça uma bolinha média;</li>
+      <li>Em seguida, passe a bolinha na farinha de rosca. Repita esse processo com o restante da massa (enrolar a bolinha e empanar);</li>
+      <li>Coloque os bolinhos no cesto da airfryer pré-aquecida a 180 graus e asse por cerca de 15 minutos ou até dourar;</li>
+      <li>Sirva as bolinhas com um molho de sua preferência. Bom apetite!</li>
+    </ol>
+    <h2>Informações nutricionais (a cada 100 gramas)</h2>
+    <table>
+      <tr>
+        <td>Calorias</td>
+        <td>Proteína</td>
+        <td>Gordura</td>
+        <td>Carboidrato</td>
+      </tr>
+      <tr>
+        <td>16,8</td>
+        <td>3,2g</td>
+        <td>3,2g</td>
+        <td>26,2g</td>
+      </tr>
+    </table>
+    <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" title="YouTube video player" class="iframe"></iframe>
+    <button><a href="https://www.receiteria.com.br/receita/bolinho-de-batata-com-queijo-facil/">Click here!</a></button>
+  
+    <h2>Curiosidades!</h2>
+    <p><h3>Você sabia que bolinho de batata é um patrimônio histórico da Alemanha?</h3>Isso mesmo! O bolinho de batata, ou kartoffelknödel (em alemão), é uma tradição em Sapiranga passada de geração para geração e estará presente na edição da Festa das Rosas de 2019. O prato da cultura alemã é considerado desde 2016, através da Lei Municipal nº 5.950, Patrimônio Histórico – Cultural Imaterial de Sapiranga.
+    O projeto de lei surgiu quando o até então estudante de graduação em Turismo Luciano Steil trabalhava no departamento de Turismo de Sapiranga, e em uma das disciplinas do curso, o sapiranguense deveria identificar um produto gastronômico e tentar desenvolver alguma ação que envolvesse o prato.</p>
+    <p><a href="https://www.receiteria.com.br/receita/bolinho-de-batata-com-queijo-facil/">Site da receita!</a></p>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 GostosoTudo</p>
+        </div>
+    </footer>
+</body>
+</html>

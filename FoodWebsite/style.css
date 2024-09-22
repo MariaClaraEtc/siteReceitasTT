@@ -159,6 +159,7 @@ header {
 .recipe-card h2 {
     font-size: 22px;
     padding: 20px;
+    background-color: transparent;
 }
 
 .recipe-card p {
