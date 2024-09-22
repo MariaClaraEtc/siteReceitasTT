@@ -87,14 +87,16 @@
     }
 
     .class-heo h2 {
-        font-size: 35px;
+        font-family: "Brush Script MT", sans-serif;
+        font-size: 70px;
         margin-bottom: 10px;
         text-align: center;
     }
 
     .ingredientes h2 {
+        font-family: "Brush Script MT", sans-serif;
         padding: 10px;
-        font-size: 25px;
+        font-size: 55px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -107,8 +109,9 @@
     }
 
     .preparo h2 {
+        font-family: "Brush Script MT", sans-serif;
         padding: 10px;
-        font-size: 25px;
+        font-size: 50px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -119,6 +122,86 @@
         margin-bottom: 10px;
         text-align: center;
         list-style: none;
+    }
+
+    /* main.table {
+        width: 45vw;
+        height: 18vh;
+        background-color: rgba(202, 24, 24, 0.333);
+
+        overflow: hidden;
+    } */
+
+    table:hover {
+        backdrop-filter: blur(7px);
+        box-shadow: 0 .4rem .8rem #0005;
+        border-radius: .8rem;
+    }
+
+    .table_header h2 {
+        font-family: "Brush Script MT", sans-serif;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    table {
+        width: 90%;
+
+        border-collapse: separate;
+        padding: 1rem;
+    }
+    
+    th {
+        border-collapse: collapse;
+        padding: 1rem;
+    }
+    
+    td {
+        border-collapse: collapse;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    thead th {
+        background-color: #222121;
+        color: #fff;
+    }
+
+    .video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+    .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+    .preguica {
+        padding: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .preguica h3 {
+        padding: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .preguica {
+        padding: 10px;
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     footer {
@@ -222,25 +305,36 @@
         </ol>
     </div>
 
-    <div class="table">
-        <h2>Informações nutricionais (a cada 100 gramas)</h2>
-        <table>
-        <tr>
-            <td>Calorias</td>
-            <td>Proteína</td>
-            <td>Gordura</td>
-            <td>Carboidrato</td>
-        </tr>
-        <tr>
-            <td>16,8</td>
-            <td>3,2g</td>
-            <td>3,2g</td>
-            <td>26,2g</td>
-        </tr>
-        </table>
-    </div>
+    <main class="table">
+        <section class="table_header">
+            <h2>Informações nutricionais (a cada 100g)</h2>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Calorias </th>
+                        <th> Proteínas </th>
+                        <th> Gorduras </th>
+                        <th> Carboidratos </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td> 0g </td>
+                    <td> 0g </td>
+                    <td> 0g </td>
+                    <td> 0g </td>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-    <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" title="YouTube video player" class="iframe"></iframe>
+    <!-- <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" title="YouTube video player" class="iframe"></iframe> -->
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" 
+        frameborder="0" allowfullscreen class="iframe"></iframe>
+    </div>
 
     <button><a href="https://www.receiteria.com.br/receita/bolinho-de-batata-com-queijo-facil/">Click here!</a></button>
     
