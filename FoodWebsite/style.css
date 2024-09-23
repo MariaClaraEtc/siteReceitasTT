@@ -157,13 +157,13 @@ header {
 }
 
 .recipe-card h2 {
-    font-size: 22px;
+    font-size: 25px;
     padding: 20px;
     background-color: transparent;
 }
 
 .recipe-card p {
-    font-size: 18px;
+    font-size: 22px;
     padding: 20px;
 }
 
