@@ -87,17 +87,124 @@
     }
 
     .class-heo h2 {
-        font-size: 35px;
+        font-family: "Brush Script MT", sans-serif;
+        font-size: 70px;
         margin-bottom: 10px;
         text-align: center;
     }
 
-    .class-heo p {
+    .ingredientes h2 {
+        font-family: "Brush Script MT", sans-serif;
+        padding: 10px;
+        font-size: 55px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ingredientes ul {
+        padding: 10px;
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .preparo h2 {
+        font-family: "Brush Script MT", sans-serif;
+        padding: 10px;
+        font-size: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .preparo ol {
+        padding: 10px;
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+        list-style: none;
+    }
+
+    /* main.table {
+        width: 45vw;
+        height: 18vh;
+        background-color: rgba(202, 24, 24, 0.333);
+
+        overflow: hidden;
+    } */
+
+    table:hover {
+        backdrop-filter: blur(7px);
+        box-shadow: 0 .4rem .8rem #0005;
+        border-radius: .8rem;
+    }
+
+    .table_header h2 {
+        font-family: "Brush Script MT", sans-serif;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    table {
+        width: 90%;
+
+        border-collapse: separate;
+        padding: 1rem;
+    }
+    
+    th {
+        border-collapse: collapse;
+        padding: 1rem;
+    }
+    
+    td {
+        border-collapse: collapse;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    thead th {
+        background-color: #222121;
+        color: #fff;
+    }
+
+    .video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+    .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+    .preguica {
         padding: 10px;
         font-size: 25px;
         margin-bottom: 10px;
         text-align: center;
-    } 
+    }
+
+    .preguica h2 {
+        font-family: "Brush Script MT", sans-serif;
+        padding: 10px;
+        font-size: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .preguica h3 {
+        font-family: "Brush Script MT", sans-serif;
+        padding: 10px;
+        font-size: 38px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
     footer {
     background: #222121;
@@ -150,7 +257,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo" >GostosoTudo</a>
+            <a href="" class="logo" >GostosoTudo</a>
             <nav class="navbar">
                 <!-- &#9776 is a HTML entity that represents the "hamburger" menu icon (three horizontal lines). It’s often used in web design to indicate a menu that can be expanded or collapsed. -->
                 <div class="menu-icon">&#9776</div>
@@ -166,64 +273,78 @@
 
     <section class="heo">
         <div class="class-heo">
-            <h2>Seja bem-vindo ao GostosoTudo!</h2>
-            
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum orci eu justo gravida, at malesuada enim efficitur. Duis id libero sed tortor venenatis varius vel vel est</p>
+            <h2>Bolinho de batat com queijo</h2>
         </div>
     </section>
 
-    <h1>Bolinho de batata com queijo</h1>
-  
-      
-    <img src="">
-    <h2>Ingredientes</h2>
-    
-    <ul>
-      <li>3 batatas médias (170 gramas cada)</li>
-      <li>1/2 xícara de chá de parmesão ralado (40 gramas)</li>
-      <li>1 colher de sopa de azeite</li>
-      <li>Farinha de rosca para empanar (60 gramas)</li>
-      <li>1 colher de chá de sal (ou a gosto)</li>
-      <li>1/2 colher de chá (rasa) de pimenta-do-reino(ou a gosto)</li>
-      <li>2 colheres de sopa de cheiro-verde (ou a gosto)</li>
-    </ul>
+    <div class="ingredientes">
+        <h2>Ingredientes</h2>
+        
+        <ul>
+        <li>3 batatas médias (170 gramas cada)</li>
+        <li>1/2 xícara de chá de parmesão ralado (40 gramas)</li>
+        <li>1 colher de sopa de azeite</li>
+        <li>Farinha de rosca para empanar (60 gramas)</li>
+        <li>1 colher de chá de sal (ou a gosto)</li>
+        <li>1/2 colher de chá (rasa) de pimenta-do-reino(ou a gosto)</li>
+        <li>2 colheres de sopa de cheiro-verde (ou a gosto)</li>
+        </ul>
+    </div>
 
-  <h2>Modo de preparo</h2>
+    <div class="preparo">
+    <h2>Modo de preparo</h2>
+        
+        <ol>
+        <li>Reúna todos os ingredientes os ingredientes;</li>
+        <li>Em uma tábua, descasque as batatas com um descascador, corte-a em pedaços grandes, mantendo um mesmo padrão de tamanho. Passe para uma panela grande, cubra com água e deixe cozinhar por cerca de 15 minutos ou até ficar al dente (espete um garfo e, se ele entrar facilmente, está pronto);</li>
+        <li>Descarte a água e reserve as batatas até elas esfriarem (isso evita que elas soltem a água do cozimento);</li>
+        <li>Com as batatas cozidas e frias, despeje-as em uma tigela e amasse-as com um garfo ou amassador até formar um purê;</li>
+        <li>Na mesma tigela, com o purê de batatas, acrescente o parmesão ralado, o azeite, o sal, a pimenta-do-reino e o cheiro-verde. Misture até a massa incorporar todos os temperos;</li>
+        <li>Com uma colher, retire uma porção da massa e faça uma bolinha média;</li>
+        <li>Em seguida, passe a bolinha na farinha de rosca. Repita esse processo com o restante da massa (enrolar a bolinha e empanar);</li>
+        <li>Coloque os bolinhos no cesto da airfryer pré-aquecida a 180 graus e asse por cerca de 15 minutos ou até dourar;</li>
+        <li>Sirva as bolinhas com um molho de sua preferência. Bom apetite!</li>
+        </ol>
+    </div>
+
+    <main class="table">
+        <section class="table_header">
+            <h2>Informações nutricionais (a cada 100g)</h2>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Calorias </th>
+                        <th> Proteínas </th>
+                        <th> Gorduras </th>
+                        <th> Carboidratos </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td> 0g </td>
+                    <td> 0g </td>
+                    <td> 0g </td>
+                    <td> 0g </td>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" title="YouTube video player" class="iframe"></iframe> -->
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" 
+        frameborder="0" allowfullscreen class="iframe"></iframe>
+    </div>
     
-    <ol>
-      <li>Reúna todos os ingredientes os ingredientes;</li>
-      <li>Em uma tábua, descasque as batatas com um descascador, corte-a em pedaços grandes, mantendo um mesmo padrão de tamanho. Passe para uma panela grande, cubra com água e deixe cozinhar por cerca de 15 minutos ou até ficar al dente (espete um garfo e, se ele entrar facilmente, está pronto);</li>
-      <li>Descarte a água e reserve as batatas até elas esfriarem (isso evita que elas soltem a água do cozimento);</li>
-      <li>Com as batatas cozidas e frias, despeje-as em uma tigela e amasse-as com um garfo ou amassador até formar um purê;</li>
-      <li>Na mesma tigela, com o purê de batatas, acrescente o parmesão ralado, o azeite, o sal, a pimenta-do-reino e o cheiro-verde. Misture até a massa incorporar todos os temperos;</li>
-      <li>Com uma colher, retire uma porção da massa e faça uma bolinha média;</li>
-      <li>Em seguida, passe a bolinha na farinha de rosca. Repita esse processo com o restante da massa (enrolar a bolinha e empanar);</li>
-      <li>Coloque os bolinhos no cesto da airfryer pré-aquecida a 180 graus e asse por cerca de 15 minutos ou até dourar;</li>
-      <li>Sirva as bolinhas com um molho de sua preferência. Bom apetite!</li>
-    </ol>
-    <h2>Informações nutricionais (a cada 100 gramas)</h2>
-    <table>
-      <tr>
-        <td>Calorias</td>
-        <td>Proteína</td>
-        <td>Gordura</td>
-        <td>Carboidrato</td>
-      </tr>
-      <tr>
-        <td>16,8</td>
-        <td>3,2g</td>
-        <td>3,2g</td>
-        <td>26,2g</td>
-      </tr>
-    </table>
-    <iframe src="https://www.youtube.com/embed/3xW2doZXG8E?si=O0MAgGQKIMoZABGw" title="YouTube video player" class="iframe"></iframe>
-    <button><a href="https://www.receiteria.com.br/receita/bolinho-de-batata-com-queijo-facil/">Click here!</a></button>
-  
-    <h2>Curiosidades!</h2>
-    <p><h3>Você sabia que bolinho de batata é um patrimônio histórico da Alemanha?</h3>Isso mesmo! O bolinho de batata, ou kartoffelknödel (em alemão), é uma tradição em Sapiranga passada de geração para geração e estará presente na edição da Festa das Rosas de 2019. O prato da cultura alemã é considerado desde 2016, através da Lei Municipal nº 5.950, Patrimônio Histórico – Cultural Imaterial de Sapiranga.
-    O projeto de lei surgiu quando o até então estudante de graduação em Turismo Luciano Steil trabalhava no departamento de Turismo de Sapiranga, e em uma das disciplinas do curso, o sapiranguense deveria identificar um produto gastronômico e tentar desenvolver alguma ação que envolvesse o prato.</p>
-    <p><a href="https://www.receiteria.com.br/receita/bolinho-de-batata-com-queijo-facil/">Site da receita!</a></p>
+    <div class="preguica">
+        <h2>Curiosidades!</h2>
+        <h3>Você sabia que bolinho de batata é um patrimônio histórico da Alemanha?</h3>
+        
+        <p>Isso mesmo! O bolinho de batata, ou kartoffelknödel (em alemão), é uma tradição em Sapiranga passada de geração para geração e estará presente na edição da Festa das Rosas de 2019. O prato da cultura alemã é considerado desde 2016, através da Lei Municipal nº 5.950, Patrimônio Histórico – Cultural Imaterial de Sapiranga.
+        O projeto de lei surgiu quando o até então estudante de graduação em Turismo Luciano Steil trabalhava no departamento de Turismo de Sapiranga, e em uma das disciplinas do curso, o sapiranguense deveria identificar um produto gastronômico e tentar desenvolver alguma ação que envolvesse o prato.</p>
+    </div>
 
     <footer>
         <div>
