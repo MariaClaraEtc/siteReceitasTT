@@ -2,22 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+
+@font-face {
+    font-family: 'pixel Digivolve';
+    src: url('../fonts/Pixel Digivolve.otf') format('truetype');
 }
 
 body {
     width: 100%;
     min-height: 100vh;
-    background: #f8f8f8;
+    background-color: black;
+    font-family: 'pixel Digivolve', sans-serif;
 }
 
 header {
     height: 80px;
     width: 100%;
-    background: #222121;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    border-radius: 45px;
+    border: 2px solid transparent;
 }
 
 .container {
@@ -28,66 +38,78 @@ header {
     justify-content: space-between;
 }
 
-/* PQ N FUNCIONAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
 .navbar {
-    display: none;
+    display: flex;
 }
 
 .navbar a {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: relative;
-    font-size: 18px;
+    font-size: 30px;
     color: #fff;
     font-weight: 800;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 60px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    
+    border-radius: 45px;
 }
 
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
+.navbar a:hover {
+    border-color: #1e495d;
 }
-
-.navbar a:hover::before {
-    width: 100%;
-}
-
-
-/* nav ul li {
-    list-style: none;
-    display: inline;
-    margin-right: 20px;
-    font-weight: 550;
-} */
 
 .logo {
+    font-family: 'pixel Digivolve', sans-serif;
     font-size: 32px;
-    color: #fff;
-    text-decoration: none;
+    color: #ffffff;
     font-weight: 700;
 }
 
-.heo {
-    background: url(https://images.unsplash.com/photo-1608835291093-394b0c943a75?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    width: 100%;
-    height: auto;
+.logo2 {
+    font-size: 32px;
+    color: #bba7a7;
+    font-weight: 700;
+    position: absolute;
+    left: 1%;
+    top: -10px;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-image: url('Images/boquinhaberta.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color:#fff;
-    text-align: center;
-    padding: 140px 0;
+    transition: background-image 0.3s ease;
+    animation: move 5s linear infinite, chomp 0.5s steps(2) infinite;
+}
+
+@keyframes chomp {
+    0%, 100% {
+        background-image: url('Images/boquinhafechada.png');
+    }
+    50% {
+        background-image: url('Images/boquinhaberta.png');
+    }
+}
+
+@keyframes move {
+    0% { left: 3%; }
+    100% { left: 20%; }
+}
+
+.logo2:hover {
+    background-image: url('Images/boquinhafechada.png');
+    animation: none;
 }
 
 .class-heo h2 {
     font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
+    color: #f8f8f8;
 }
 
 .class-heo p {
@@ -95,101 +117,106 @@ header {
     font-size: 25px;
     margin-bottom: 10px;
     text-align: center;
-} 
-
-/* --------------SCROLLBAR (EXPERIMENTAL)---------------- */
+    color: #f8f8f8;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
 }
   
-
 ::-webkit-scrollbar-track {
     background: #f8f8f8;
 }
-  
   
 ::-webkit-scrollbar-thumb {
     background: #222121;
 }
   
- 
 ::-webkit-scrollbar-thumb:hover {
     background: black;
 }
 
-/* ------------------RECEITASAAAAAA----------------- */
-
 .recipes {
     padding: 50px 0;
-
 }
 
 .recipes h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 25px;
+    color: #f8f8f8;
 }
 
 .recipe-section {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 10px;
 }
 
 .recipe-card {
-    background: #fff;
-    margin: 30px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rbga(0, 0, 0, 0.1);
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
 }
 
 .recipe-card img {
-    width: 100%;
-    height: 200px;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    filter: brightness(0.8);
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px linear-gradient(transparent 55%, rgba(0, 0, 0, 0.35));
 }
 
 .recipe-card h2 {
-    font-size: 25px;
+    font-size: 22px;
     padding: 20px;
-    background-color: transparent;
+    color: #f8f8f8;
 }
 
 .recipe-card p {
-    font-size: 22px;
+    font-size: 20px;
     padding: 20px;
+    color: #ddd;
 }
 
 .recipe-card a {
     display: block;
     text-align: center;
     text-decoration: none;
-    background: #222121;
+    background: #444;
     color: #fff;
     padding: 15px 0;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.recipe-card a:hover {
+    background: #666;
 }
 
 footer {
+    margin-top: 420px;
     background: #222121;
     padding: 20px 0;
     color: #fff;
     text-align: center;
 }
 
-/* ---------media query pq selfhate é o melhor self impulse------------ */
-
 .menu-icon {
     font-size: 24px;
     padding: 20px;
-    text-align: right;
+    text-align: center;
     cursor: pointer;
     display: block;
 }
@@ -203,11 +230,179 @@ footer {
         display: block;
     }
 
+    header {
+        padding: 0 100px; /* Aumenta o padding em telas maiores */
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .heo h2 {
+    .navbar a {
+        font-size: 24px; /* Ajusta o tamanho da fonte para telas menores */
+        margin-left: 20px; /* Reduz o espaço entre os links */
+    }
+
+    .class-heo h2 {
         font-size: 28px;
     }
-    
+
+    .recipes h1 {
+        font-size: 22px; /* Ajusta o tamanho do título em telas menores */
+    }
+
+    .recipe-card {
+        height: auto; /* Permite que a altura se ajuste automaticamente */
+    }
+
+    .recipe-card img {
+        height: auto; /* Ajusta a altura da imagem para se adaptar ao card */
+    }
+
+    .welcome-message {
+        font-size: 30px; /* Tamanho do texto menor em telas pequenas */
+    }
+
+    .text-content {
+        font-size: 22px; /* Ajusta o tamanho do texto para telas menores */
+    }
+
+    .text-content span {
+        font-size: 20px; /* Ajusta o tamanho das spans em telas menores */
+    }
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 1000px; }
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+}
+
+.title {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.card:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+#headerImage {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#headerImage img {
+    top: 55%;
+    left: 100%;
+    transform: translate(40%, 0%);
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(234, 216, 216, 0.7);
+}
+
+.text-content {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    max-width: 850px;
+}
+
+.text-content span {
+    display: block; /* Cada span em uma nova linha */
+    font-size: 20px;
+    line-height: 1.8; /* Aumenta o espaço entre as linhas */
+    letter-spacing: 1px; /* Aumenta o espaço entre as letras */
+    word-spacing: 2px; /* Aumenta o espaço entre as palavras */
+    margin-bottom: 10px; /* Aumenta o espaço entre os spans */
+}
+
+
+/* Responsividade */
+
+@media only screen and (max-width: 868px) {
+    #headerImage img {
+        width: 80%; /* Ajusta a largura da imagem para telas menores */
+    }
+
+    .welcome-message {
+        font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .text-content {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+        top: 50%; /* Pode ajustar conforme necessário */
+    }
+
+    .text-content span {
+        font-size: 9px; /* Ajusta o tamanho da fonte para telas menores */
+    }
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Fundo Animado com Estrelas</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+        }
+
+        .stars {
+            width: 100%;
+            height: 100%;
+            background-color: #1c1c1c;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            animation: moveStars 200s linear infinite;
+        }
+
+        @keyframes moveStars {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars">DASKJDSAOIDASJASD</div>
+   
+</body>
+</html>
