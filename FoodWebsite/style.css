@@ -19,14 +19,14 @@ body {
 
 header {
     height: 80px;
-    width: 80%;
+    width: auto;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 0px;
-    border-radius: 45px;
+    border-radius: 15px;
     border: 2px solid transparent;
 }
 
@@ -44,17 +44,16 @@ header {
 
 .navbar a {
     top: 50%;
-    left: 50%;
+    left: -10%;
     transform: translate(-50%, -50%);
     position: relative;
     font-size: 30px;
     color: #fff;
     font-weight: 800;
     text-decoration: none;
-    margin-left: 60px;
+    margin-left: 10px;
     padding: 10px 20px;
     border: 2px solid transparent;
-    
     border-radius: 45px;
 }
 
@@ -67,6 +66,9 @@ header {
     font-size: 32px;
     color: #ffffff;
     font-weight: 700;
+    left: 1%;
+    top: -10px;
+    display: block;
 }
 
 .logo2 {
