@@ -19,13 +19,13 @@ body {
 
 header {
     height: 80px;
-    width: 100%;
+    width: 80%;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 0px;
     border-radius: 45px;
     border: 2px solid transparent;
 }
